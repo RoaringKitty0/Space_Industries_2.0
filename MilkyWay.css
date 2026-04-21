@@ -63,7 +63,7 @@ body {
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-    background: url('/background3.png') no-repeat center center / 100% auto white;
+    background: url('background3.png') no-repeat center center / 100% auto white;
     color: white;
 }
 
