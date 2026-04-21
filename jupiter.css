@@ -1,0 +1,2630 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* ШАПКА САЙТА */
+
+header {
+    padding: 20px 40px;
+    background: none;
+}
+
+header nav {
+    text-align: right;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header img {
+    width: 130px;
+}
+
+header nav ul li.image {
+    margin-right: auto;  /* Это прижимает все остальные элементы вправо */
+    max-width: 150px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;     
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Sansation', sans-serif;
+    font-size: 13px;
+
+}
+
+header nav ul li a:hover {
+    color:rgb(121, 121, 121);
+    transition: 0.5s ease;
+}
+
+/* HERO-БЛОК СТРАНИЦЫ */
+
+main .hero p {
+    display: inline-block;
+    justify-content: left;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 88%;
+    margin-left: 20px;
+    margin-top: 100px;
+    letter-spacing: -5%;
+    width: 1300px;
+}
+
+main .hero h1 {
+    text-align: center;
+    font-size: 338px;
+    font-weight: 700;
+    letter-spacing: -9%;
+    margin-bottom: -85px;
+}
+
+/* О ЮПИТЕРЕ */
+
+.summary {
+    margin: 0 auto;
+    background: black;
+    overflow: auto;  /* Чтобы контейнер не схлопывался */
+}
+
+.summary .Jupiter {
+    float: right;                    /* Фото справа */
+    width: 45%;
+    max-width: 900px;
+    height: auto;
+    margin-left: 40px;               /* Отступ от текста */
+    margin-top: -570px;
+    margin-bottom: 20px;
+}
+
+.summary p {
+    color: white;
+    font-size: 31px;
+    font-weight: 200;
+    line-height: 88%;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 70px;
+    width: 500px;
+}
+
+/* ВИЗИТНАЯ КАРТОЧКА ЮПИТЕРА */
+
+.summary_card {
+    background: white;
+    margin-left: 150px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    display: block;width: fit-content;  
+    text-align: center;
+}
+
+.card {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* БЛОК: ФИЗ, ХИМ, КВАНТ */
+
+.concepts {
+    background: black;
+}
+
+.concepts nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 60px;
+    margin-top: 50px;
+}
+
+.concepts nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px white solid;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 5px;
+}
+
+.concepts nav ul .active {
+    background: white;
+    color: black;
+}
+
+                                                /* ЯДРО - ОДИН ОБЩИЙ БЛОК */
+.core {
+    background: black;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Центрируем содержимое */
+    font-size: 18px;
+    width: 1200px;        /* Фиксированная ширина как у содержимого */
+    margin: 0 auto;       /* Центрируем весь блок на странице */
+}
+
+/* ЗАГОЛОВОК - ВАШИ СТИЛИ */
+.core h2 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -10%;
+    width: 100%;          /* На всю ширину родителя */
+    margin-bottom: 20px;
+}
+/* ОПИСАНИЕ */
+.core .info {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 88%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* ТАБЛИЦА - исправляем */
+.core table {
+    width: 100%;          /* На всю ширину родителя */
+    border-collapse: collapse;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ЯЧЕЙКИ ТАБЛИЦЫ */
+.core td {
+    border: none;
+    padding: 15px 20px;
+    color: white; 
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ */
+.core tr {
+    border-bottom: 1px solid white;
+}
+
+.core tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА */
+.core td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: white;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.core td:nth-child(2) {
+    font-weight: 500;
+    color: white;
+}
+
+/* ТРЕТЬЯ КОЛОНКА */
+.core td:nth-child(3) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+                                                 /* МАНТИЯ - ОДИН ОБЩИЙ БЛОК */
+.mantle {
+    background: black;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Центрируем содержимое */
+    font-size: 18px;
+    width: 1200px;        /* Фиксированная ширина как у содержимого */
+    margin: 0 auto;       /* Центрируем весь блок на странице */
+}
+
+/* ЗАГОЛОВОК - ВАШИ СТИЛИ */
+.mantle h2 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -10%;
+    width: 100%;          /* На всю ширину родителя */
+    margin-bottom: 20px;
+}
+/* ОПИСАНИЕ */
+.mantle .info {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 88%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* ТАБЛИЦА - исправляем */
+.mantle table {
+    width: 100%;          /* На всю ширину родителя */
+    border-collapse: collapse;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ЯЧЕЙКИ ТАБЛИЦЫ */
+.mantle td {
+    border: none;
+    padding: 15px 20px;
+    color: white; 
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ */
+.mantle tr {
+    border-bottom: 1px solid white;
+}
+
+.mantle tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА */
+.mantle td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: white;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.mantle td:nth-child(2) {
+    font-weight: 500;
+    color: white;
+}
+
+/* ТРЕТЬЯ КОЛОНКА */
+.mantle td:nth-child(3) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+                                                 /* ВНЕШНЯЯ ОБОЛОЧКА - ОДИН ОБЩИЙ БЛОК */
+.shell {
+    background: black;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Центрируем содержимое */
+    font-size: 18px;
+    width: 1200px;        /* Фиксированная ширина как у содержимого */
+    margin: 0 auto;       /* Центрируем весь блок на странице */
+}
+
+/* ЗАГОЛОВОК - ВАШИ СТИЛИ */
+.shell h2 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -10%;
+    width: 100%;          /* На всю ширину родителя */
+    margin-bottom: 20px;
+}
+/* ОПИСАНИЕ */
+.shell .info {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 88%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* ТАБЛИЦА - исправляем */
+.shell table {
+    width: 100%;          /* На всю ширину родителя */
+    border-collapse: collapse;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ЯЧЕЙКИ ТАБЛИЦЫ */
+.shell td {
+    border: none;
+    padding: 15px 20px;
+    color: white; 
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ */
+.shell tr {
+    border-bottom: 1px solid white;
+}
+
+.shell tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА */
+.shell td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: white;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.shell td:nth-child(2) {
+    font-weight: 500;
+    color: white;
+}
+
+/* ТРЕТЬЯ КОЛОНКА */
+.shell td:nth-child(3) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+                                        /* АТМОСФЕРА - ОДИН ОБЩИЙ БЛОК */
+
+.atmosphere {
+    background: black;
+    padding: 40px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+.atmosphere h2 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -10%;
+    width: 1200px;
+    margin-bottom: 40px;
+}
+
+.structure {
+    width: 1200px;
+}
+
+.structure h6.info {
+    color: black;
+    background: white;
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 6px;
+    
+    /* Добавляем flexbox */
+    display: flex;
+    align-items: center;       /* Центрирование по вертикали */
+    justify-content: center;    /* Центрирование по горизонтали */
+}
+
+/* Таблица */
+.structure table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+/* Заголовки таблицы */
+.structure thead tr {
+    border-bottom: 1px solid white;  /* Линия под заголовками */
+}
+
+.structure th {
+    text-align: left;  /* Выравнивание по левому краю */
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Все ячейки */
+.structure td {
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    vertical-align: top;
+}
+
+/* Горизонтальные линии между строками */
+.structure tbody tr {
+    border-bottom: 1px solid white;
+}
+
+.structure tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Первая колонка */
+.structure td.head {
+    font-weight: 600;
+    white-space: nowrap;
+    color: white;
+}
+
+/* Остальные колонки */
+.structure td:nth-child(2),
+.structure td:nth-child(3),
+.structure td:nth-child(4) {
+    font-weight: 400;
+}
+
+/* Третья и четвертая колонки (описания) */
+.structure td:nth-child(4) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+
+/* Специально для числовых значений во второй и третьей колонках */
+.structure td:nth-child(2),
+.structure td:nth-child(3) {
+    font-family: 'Montserrat', monospace;  /* Для лучшего отображения чисел */
+    white-space: nowrap;
+}
+
+/* Адаптивность */
+@media (max-width: 1300px) {
+    .atmosphere h2,
+    .structure {
+        width: 95%;
+    }
+    
+    .structure th,
+    .structure td {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+    
+    .structure td.head {
+        white-space: normal;  /* Перенос текста на мобильных */
+    }
+}
+
+                                                    /* АТМОСФЕРНАЯ ДИНАМИКА */
+
+.dynamic {
+    width: 1200px;
+}
+
+.dynamic h6.info {
+    color: black;
+    background: white;
+    width: 440px;
+    height: 50px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 6px;
+    
+    /* Добавляем flexbox */
+    display: flex;
+    align-items: center;       /* Центрирование по вертикали */
+    justify-content: center;    /* Центрирование по горизонтали */
+}
+
+/* Таблица */
+.dynamic table {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+/* Заголовки таблицы */
+.dynamic thead tr {
+    border-bottom: 1px solid white;  /* Линия под заголовками */
+}
+
+.dynamic th {
+    text-align: left;  /* Выравнивание по левому краю */
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Все ячейки */
+.dynamic td {
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    vertical-align: top;
+}
+
+/* Горизонтальные линии между строками */
+.dynamic tbody tr {
+    border-bottom: 1px solid white;
+}
+
+.dynamic tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Первая колонка */
+.dynamic td.head {
+    font-weight: 600;
+    white-space: nowrap;
+    color: white;
+}
+
+/* Остальные колонки */
+.dynamic td:nth-child(2),
+.dynamic td:nth-child(3),
+.dynamic td:nth-child(4) {
+    font-weight: 400;
+}
+
+/* Третья и четвертая колонки (описания) */
+.dynamic td:nth-child(4) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+
+/* Специально для числовых значений во второй и третьей колонках */
+.dynamic td:nth-child(2),
+.dynamic td:nth-child(3) {
+    font-family: 'Montserrat', monospace;  /* Для лучшего отображения чисел */
+    white-space: nowrap;
+}
+
+.dynamic .reactions {
+    margin-bottom: 50px;
+}
+
+/* Адаптивность */
+@media (max-width: 1300px) {
+    .dynamic h2,
+    .dynamic {
+        width: 95%;
+    }
+    
+    .dynamic th,
+    .dynamic td {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+    
+    .dynamic td.head {
+        white-space: normal;  /* Перенос текста на мобильных */
+    }
+}
+
+                                    /* БОЛЬШОЕ КРАСНОЕ ПЯТНО */
+
+.big_red_spot {
+    width: 1200px;
+}
+
+.big_red_spot h6 {
+    color: black;
+    background: white;
+    width: 440px;
+    height: 50px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 6px;
+    
+    /* Добавляем flexbox */
+    display: flex;
+    align-items: center;       /* Центрирование по вертикали */
+    justify-content: center;    /* Центрирование по горизонтали */
+}
+
+/* Таблица */
+.big_red_spot table {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+/* Заголовки таблицы */
+.big_red_spot thead tr {
+    border-bottom: 1px solid white;  /* Линия под заголовками */
+}
+
+.big_red_spot th {
+    text-align: left;  /* Выравнивание по левому краю */
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Все ячейки */
+.big_red_spot td {
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    vertical-align: top;
+}
+
+/* Горизонтальные линии между строками */
+.big_red_spot tbody tr {
+    border-bottom: 1px solid white;
+}
+
+.big_red_spot tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Первая колонка */
+.big_red_spot td.head {
+    font-weight: 600;
+    white-space: nowrap;
+    color: white;
+}
+
+/* Остальные колонки */
+.big_red_spot td:nth-child(2),
+.big_red_spot td:nth-child(3),
+.big_red_spot td:nth-child(4) {
+    font-weight: 400;
+}
+
+/* Третья и четвертая колонки (описания) */
+.big_red_spot td:nth-child(4) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+
+/* Специально для числовых значений во второй и третьей колонках */
+.big_red_spot td:nth-child(2),
+.big_red_spot td:nth-child(3) {
+    font-family: 'Montserrat', monospace;  /* Для лучшего отображения чисел */
+    white-space: nowrap;
+}
+
+.big_red_spot .reactions {
+    margin-bottom: 50px;
+}
+
+/* Адаптивность */
+@media (max-width: 1300px) {
+    .big_red_spot h2,
+    .big_red_spot {
+        width: 95%;
+    }
+    
+    .big_red_spot th,
+    .big_red_spot td {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+    
+    .big_red_spot td.head {
+        white-space: normal;  /* Перенос текста на мобильных */
+    }
+}
+
+                                        /* ПРИЧИНЫ КРАСНОГО ЦВЕТА (ГИПОТЕЗЫ) */
+
+.reasons_of_red_color {
+    width: 1200px;
+}
+
+.reasons_of_red_color h6 {
+    color: black;
+    background: white;
+    width: 640px;
+    height: 50px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 6px;
+    
+    /* Добавляем flexbox */
+    display: flex;
+    align-items: center;       /* Центрирование по вертикали */
+    justify-content: center;    /* Центрирование по горизонтали */
+}
+
+.reasons_of_red_color ul {
+    list-style: none;
+}
+
+.reasons_of_red_color ul li {
+    margin-top: 20px;
+}
+
+.reasons_of_red_color ul li p.head {
+    font-weight: 700;  /* Жирный */
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.reasons_of_red_color .P_S {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
+                                                /* МАГНИТОСФЕРА - ОДИН ОБЩИЙ БЛОК */
+.magnetosphere {
+    background: black;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Меняем с left на flex-start */
+    font-size: 18px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ЗАГОЛОВОК */
+.magnetosphere h2 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -10%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* ЗАГОЛОВКИ СЕКЦИЙ */
+.magnetosphere h6 {
+    color: black;
+    background: white;
+    width: 525px;
+    height: 50px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 6px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ВСЕ ТАБЛИЦЫ */
+.magnetosphere table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    margin: 30px auto 50px;
+}
+
+/* ЗАГОЛОВКИ ТАБЛИЦ - ВСЕ ПО ЛЕВОМУ КРАЮ */
+.magnetosphere th {
+    text-align: left !important;  /* Принудительно по левому краю */
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid white;  /* Линия под заголовками */
+}
+
+/* ВСЕ ЯЧЕЙКИ ДАННЫХ - ПО ЛЕВОМУ КРАЮ */
+.magnetosphere td {
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    text-align: left;  /* Добавляем выравнивание влево */
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ МЕЖДУ СТРОКАМИ */
+.magnetosphere tr {
+    border-bottom: 1px solid white;
+}
+
+.magnetosphere tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА - ЖИРНАЯ */
+.magnetosphere td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: white;
+    text-align: left;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.magnetosphere td:nth-child(2) {
+    font-weight: 500;
+    color: white;
+    text-align: left;
+}
+
+/* ТРЕТЬЯ КОЛОНКА (ЕСЛИ ЕСТЬ) */
+.magnetosphere td:nth-child(3) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-align: left;
+}
+
+/* СПЕЦИАЛЬНО ДЛЯ ТАБЛИЦ С 2 КОЛОНКАМИ */
+.magnetosphere .structure td:nth-child(2),
+.magnetosphere .radiation_belts td:nth-child(2) {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ПОЛЯРНЫЕ СИЯНИЯ - ТЕКСТ */
+.polar_mergers {
+    border: 1px solid white;        /* Белая линия */
+    border-radius: 25px;            /* Закругление 25px */
+    padding: 20px;                  /* Внутренние отступы */
+    margin: 20px 0;                 /* Отступы от соседних блоков */
+    background: transparent;        /* Прозрачный фон */
+}
+
+.polar_mergers h6 {
+    color: white;
+    background: none;
+    width: auto;
+    height: 50px;
+    margin: 0 0 15px 0;            /* Убираем отступы сверху, оставляем снизу */
+    font-weight: 600;
+    font-size: 25px;
+    text-align: left;
+    border-radius: 6px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.polar_mergers p {
+    color: white;                   /* Белый текст */
+    text-align: justify;               /* Выравнивание по левому краю */
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0;                      /* Убираем отступы */
+    padding: 0;                      /* Убираем внутренние отступы */
+    font-weight: 300;
+    width: 1000px;
+}
+
+                                                /* КОЛЬЦЕВАЯ СИСТЕМА - ОДИН ОБЩИЙ БЛОК */
+.ring_system {
+    background: black;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Меняем с left на flex-start */
+    font-size: 18px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ЗАГОЛОВОК */
+.ring_system h2 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -10%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* ЗАГОЛОВКИ СЕКЦИЙ */
+.ring_system h6 {
+    color: black;
+    background: white;
+    width: 525px;
+    height: 50px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 6px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ВСЕ ТАБЛИЦЫ */
+.ring_system table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    margin: 30px auto 50px;
+}
+
+/* ЗАГОЛОВКИ ТАБЛИЦ - ВСЕ ПО ЛЕВОМУ КРАЮ */
+.ring_system th {
+    text-align: left !important;  /* Принудительно по левому краю */
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid white;  /* Линия под заголовками */
+}
+
+/* ВСЕ ЯЧЕЙКИ ДАННЫХ - ПО ЛЕВОМУ КРАЮ */
+.ring_system td {
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    text-align: left;  /* Добавляем выравнивание влево */
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ МЕЖДУ СТРОКАМИ */
+.ring_system tr {
+    border-bottom: 1px solid white;
+}
+
+.ring_system tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА - ЖИРНАЯ */
+.ring_system td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: white;
+    text-align: left;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.ring_system td:nth-child(2) {
+    font-weight: 500;
+    color: white;
+    text-align: left;
+}
+
+/* ТРЕТЬЯ КОЛОНКА (ЕСЛИ ЕСТЬ) */
+.ring_system td:nth-child(3) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-align: left;
+}
+
+/* СПЕЦИАЛЬНО ДЛЯ ТАБЛИЦ С 2 КОЛОНКАМИ */
+.ring_system .structure td:nth-child(2),
+.ring_system .radiation_belts td:nth-child(2) {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* КОЛЬЦЕВАЯ СИСТЕМА - ПРОИСХОЖДЕНИЕ И ФУНКЦИОНАЛЬНОЕ ЗНАЧЕНИЕ */
+
+.history {
+    border: 1px solid white;        /* Белая линия */
+    border-radius: 25px;            /* Закругление 25px */
+    padding: 20px;                  /* Внутренние отступы */
+    margin: 20px 0;                 /* Отступы от соседних блоков */
+    background: transparent;        /* Прозрачный фон */
+}
+
+.history h6 {
+    color: white;
+    background: none;
+    width: auto;
+    height: 50px;
+    margin: 0 0 15px 0;            /* Убираем отступы сверху, оставляем снизу */
+    font-weight: 600;
+    font-size: 25px;
+    text-align: left;
+    border-radius: 6px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.history p {
+    color: white;                   /* Белый текст */
+    text-align: justify;               /* Выравнивание по левому краю */
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0;                      /* Убираем отступы */
+    padding: 0;                      /* Убираем внутренние отступы */
+    font-weight: 300;
+    width: 1000px;
+}
+
+.functions {
+    border: 1px solid white;        /* Белая линия */
+    border-radius: 25px;            /* Закругление 25px */
+    padding: 20px;                  /* Внутренние отступы */
+    margin: 20px 0;                 /* Отступы от соседних блоков */
+    background: transparent;        /* Прозрачный фон */
+}
+
+.functions h6 {
+    color: white;
+    background: none;
+    width: auto;
+    height: 50px;
+    margin: 0 0 15px 0;            /* Убираем отступы сверху, оставляем снизу */
+    font-weight: 600;
+    font-size: 25px;
+    text-align: left;
+    border-radius: 6px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.functions p {
+    color: white;                   /* Белый текст */
+    text-align: justify;               /* Выравнивание по левому краю */
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0;                      /* Убираем отступы */
+    padding: 0;                      /* Убираем внутренние отступы */
+    font-weight: 300;
+    width: 1000px;
+}
+
+/* РАЗДЕЛ ХИМИИ РАЗДЕЛ ХИМИИ РАЗДЕЛ ХИМИИ РАЗДЕЛ ХИМИИ РАЗДЕЛ ХИМИИ РАЗДЕЛ ХИМИИ РАЗДЕЛ ХИМИИ РАЗДЕЛ ХИМИИ РАЗДЕЛ ХИМИИ  */
+
+.chemistry {
+    background: white;
+}
+
+.chemistry nav ul li {
+    color: black;
+    border: 1px black solid;
+}
+
+.chemistry nav ul .active {
+    background: black;
+    color: white;
+}
+
+.chemical_composition h2 {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 88%;
+    letter-spacing: -5%;
+    padding-top: 230px;
+    margin-bottom: 150px;
+    margin-left: 60px;
+}
+
+.chemical_composition img {
+    position: absolute;
+    width: 100%;
+    margin-top: -350px;
+}
+
+                                /* ТАБЛИЦА ОБЩЕГО ХИМИЧЕСКОГО СОСТАВА АТМОСФЕРЫ - ОДИН ОБЩИЙ БЛОК */
+
+
+
+.chemical_composition table {
+    width: 1300px;          
+    border-collapse: collapse;
+    color: black;
+    margin: 0 auto;
+}
+
+.chemical_composition th {
+    text-align: left;           
+    padding: 15px 0;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 2px solid black;  /* Более толстая линия под заголовками */
+}
+
+/* ЯЧЕЙКИ ТАБЛИЦЫ */
+.chemical_composition td {
+    border: none;
+    padding: 15px 20px;
+    color: black; 
+    font-size: 20px;
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ */
+.chemical_composition tr {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.chemical_composition tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА */
+.chemical_composition td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: black;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.chemical_composition td:nth-child(2) {
+    font-weight: 500;
+    color: black;
+}
+
+/* ТРЕТЬЯ КОЛОНКА */
+.chemical_composition td:nth-child(3) {
+    color: black;
+    font-size: 20px;
+}
+
+                        /* ТАБЛИЦА ХИМИЧЕСКОЙ СТРУКТУРЫ АТМОСФЕРЫ ПО СЛОЯМ - ОДИН ОБЩИЙ БЛОК */
+
+
+.chemical_structure {
+    padding-bottom: 100px;
+}
+
+.chemical_structure h2 {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 88%;
+    letter-spacing: -5%;
+    padding-top: 230px;
+    margin-bottom: 150px;
+    margin-left: 60px;
+    margin-left: 280px;
+}
+
+.chemical_structure img {
+    position: absolute;
+    width: 100%;
+    margin-top: -350px;
+}
+
+.chemical_structure table {
+    width: 1300px;          
+    border-collapse: collapse;
+    color: black;
+    margin: 0 auto;
+}
+
+.chemical_structure th {
+    text-align: left;           
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 2px solid black;  /* Более толстая линия под заголовками */
+}
+
+/* ЯЧЕЙКИ ТАБЛИЦЫ */
+.chemical_structure td {
+    border: none;
+    padding: 15px 20px;
+    color: black; 
+    font-size: 20px;
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ */
+.chemical_structure tr {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.chemical_composition tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА */
+.chemical_structure td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: black;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.chemical_structure td:nth-child(2) {
+    font-weight: 500;
+    color: black;
+}
+
+/* ТРЕТЬЯ КОЛОНКА */
+.chemical_structure td:nth-child(3) {
+    color: black;
+    font-size: 20px;
+}
+
+/* РАЗДЕЛ КВАНТОВОЙ ФИЗИКИ РАЗДЕЛ КВАНТОВОЙ ФИЗИКИ РАЗДЕЛ КВАНТОВОЙ ФИЗИКИ РАЗДЕЛ КВАНТОВОЙ ФИЗИКИ РАЗДЕЛ КВАНТОВОЙ ФИЗИКИ */
+
+.quantum_physics {
+    background: white;
+    color: black
+}
+
+/* СПИСОК ТРЕХ КОНЦЕПЦИЙ (КВАНТ - АКТИВНАЯ) */
+
+.quantum_physics nav {
+    padding-bottom: 150px;
+}
+
+.quantum_physics nav ul li {
+    color: black;
+    border: 1px black solid;
+}
+
+.quantum_physics nav ul .active {
+    background: black;
+    color: white;
+}
+
+                                        /* ПРО МЕТАЛЛИЧЕСКИЙ ВОДОРОД */
+
+.metallic_hydrogen .header {
+    border: 2px solid black;
+    border-radius: 23px;
+    margin: 0 70px;
+    padding: 30px 40px;
+    margin-bottom: 70px;
+}
+
+.metallic_hydrogen h2 {
+    display: inline-block;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 400;
+    width: 750px;
+}
+
+.metallic_hydrogen p {
+    font-size: 16px;
+    font-weight: 200;
+    display: inline-block;
+    text-align: justify;
+    width: 370px;
+    letter-spacing: -8%;
+    line-height: 88%;
+    margin-left: 850px;
+    margin-top: -20px;
+}
+
+/* ПРО МЕТАЛЛИЧЕСКИЙ ВОДОРОД - ТАБЛИЦА */
+
+.info table {
+    width: 1300px;          
+    border-collapse: collapse;
+    color: black;
+    margin: 0 auto;
+}
+
+.info th {
+    text-align: left;           
+    padding: 15px 0;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid black;  /* Более толстая линия под заголовками */
+}
+
+/* ЯЧЕЙКИ ТАБЛИЦЫ */
+.info td {
+    border: none;
+    padding: 15px 20px;
+    color: black; 
+    font-size: 20px;
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ */
+.info tr {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.info tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА */
+.info td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: black;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.info td:nth-child(2) {
+    font-weight: 500;
+    color: black;
+}
+
+/* ТРЕТЬЯ КОЛОНКА */
+.info td:nth-child(3) {
+    color: black;
+    font-size: 20px;
+}
+
+                                        /* ПРО ДИНАМО-ЭФФЕКТ */
+
+.dinamo_effect {
+    margin-bottom: 100px;
+    padding: 30px 70px;
+}
+
+.dinamo_effect .header h2 {
+    font-size: 40px;
+    font-weight: 500;
+
+}
+.dinamo_effect .header p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.dinamo_effect .scheme {
+    text-align: center;  /* Центрирует inline-элементы */
+    width: 100%;
+    margin-top: 100px;
+}
+
+.dinamo_effect .scheme img {
+    display: inline-block;  /* Чтобы text-align работал */
+    max-width: 100%;
+    height: auto;
+}
+
+.result {
+    border-left: 5px solid black;
+    padding: 0 10px;
+    margin-top: 60px;
+}
+
+.result h6 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.result p {
+    font-family: 20px;
+    font-weight: 200;
+    width: 780px;
+    text-align: justify;
+}
+
+                                        /* ПРО КВАНТОВЫЕ ПЕРЕХОДЫ В АТМОСФЕРЕ */
+
+
+.quantum_transitions {
+    padding: 30px 70px;
+}
+
+.quantum_transitions h2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: right;
+    width: 750px;
+    float: right;
+
+}
+
+.quantum_transitions .table {
+    display: flex;                    /* Делаем контейнер flex-контейнером */
+    justify-content: space-between;    /* Распределяет пространство между элементами */
+    align-items: flex-start;           /* Выравнивание по верхнему краю */
+    gap: 40px;                         /* Расстояние между элементами */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.quantum_transitions .table img {
+    flex: 0 0 40%;                     /* Фиксированная ширина 40% */
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
+
+.quantum_transitions .table table {
+    flex: 0 0 55%;                     /* Фиксированная ширина 55% */
+    width: auto;                        /* Убираем фиксированную ширину */
+    width: 900px;
+    border-collapse: collapse;
+    color: black;
+}
+
+/* Остальные стили таблицы остаются без изменений */
+.quantum_transitions th {
+    text-align: right;
+    padding: 15px 0;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
+.quantum_transitions td {
+    text-align: right;
+    border: none;
+    padding: 15px 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.quantum_transitions tr {
+    border-bottom: 1px solid black;
+}
+
+.quantum_transitions tr:last-child {
+    border-bottom: none;
+}
+
+.quantum_transitions td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: black;
+}
+
+.quantum_transitions td:nth-child(2) {
+    font-weight: 500;
+    color: black;
+}
+
+.quantum_transitions td:nth-child(3) {
+    color: black;
+    font-size: 20px;
+}
+
+                                            /* ДЕКАМЕТРОВОЕ ИЗЛУЧЕНИЕ */
+
+.decameter_radiation {
+    margin: 50px 80px;
+}
+
+.decameter_radiation h2 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -8%;
+    line-height: 88%;
+    width: 390px;
+    margin-bottom: 50px;
+}
+
+.decameter_radiation h6 {
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 160px;
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.decameter_radiation p {
+    border-left: 1px black solid;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: -8%;
+    text-align: justify;
+    line-height: 88%;
+}
+
+                                         /* КВАНТОВАЯ ПРИРОДА ВНУТРЕННЕГО ТЕПЛА */
+
+.quantum_nature {
+    margin: 50px 80px;
+    padding-bottom: 50px;
+}
+
+.quantum_nature h2 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -8%;
+    line-height: 88%;
+    width: 700px;
+    margin-bottom: 50px;
+}
+
+.quantum_nature .info {
+    display: flex;
+    align-items: flex-start;  /* Выравнивание по верхнему краю */
+    gap: 40px;                /* Расстояние между блоками */
+    width: 100%;
+}
+
+.quantum_nature .heat_generation,
+.quantum_nature .characteristic {
+    flex: 1;                  /* Блоки занимают равное пространство */
+}
+
+.quantum_nature .heat_generation {
+    max-width: 550px;
+}
+
+.quantum_nature .characteristic {
+    max-width: 700px;
+}
+
+.quantum_nature .head {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;            /* Убираем верхний отступ */
+}
+
+.quantum_nature p {
+    font-size: 15px;
+    font-weight: 200;
+    text-align: justify;
+    margin-top: 0;            /* Убираем верхний отступ */
+}
+
+                                            /* ФОТО СЛОЯ ЮПИТЕРА */
+
+img {
+    width: 100%;
+}
+
+                                            /* ПРО ЭВОЛЮЦИЮ ЮПИТЕРА */
+
+.evolution {
+    background: white;
+    padding: 80px;
+}
+
+.evolution h2 {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.accretion {
+    text-align: center;
+}
+
+.accretion img {
+    margin-top: 100px;
+    display: inline-block;
+}
+
+                                            /* СРАВНЕНИЕ СО ЗВЁЗДАМИ */
+
+.with_stars {
+    background: white;
+    padding: 80px;
+}
+
+.with_stars h2 {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* СРАВНЕНИЕ СО ЗВЁЗДАМИ - ТАБЛИЦА */
+
+.with_stars table {
+    width: 1300px;          
+    border-collapse: collapse;
+    color: black;
+    margin: 0 auto;
+}
+
+.with_stars th {
+    text-align: left;           
+    padding: 15px 0;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid black;  /* Более толстая линия под заголовками */
+}
+
+/* ЯЧЕЙКИ ТАБЛИЦЫ */
+.with_stars td {
+    border: none;
+    padding: 15px 20px;
+    color: black; 
+    font-size: 20px;
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ */
+.with_stars tr {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.with_stars tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА */
+.with_stars td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: black;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.with_stars td:nth-child(2) {
+    font-weight: 500;
+    color: black;
+}
+
+/* ТРЕТЬЯ КОЛОНКА */
+.with_stars td:nth-child(3) {
+    color: black;
+    font-size: 20px;
+}
+
+.with_stars p {
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 45%;
+    padding: 25px 40px 25px 15px;
+    text-align: justify;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 95%;
+    letter-spacing: -5%;
+}
+
+                                            /* ИССЛЕДОВАНИЯ ЮПИТЕРА */
+
+.research {
+    background: white;
+    padding: 30px 80px;
+}
+
+.research h2 {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* СРАВНЕНИЕ СО ЗВЁЗДАМИ - ТАБЛИЦА */
+
+.research table {
+    width: 1300px;          
+    border-collapse: collapse;
+    color: black;
+    margin: 0 auto;
+}
+
+.research th {
+    text-align: left;           
+    padding: 15px 0;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid black;  /* Более толстая линия под заголовками */
+}
+
+/* ЯЧЕЙКИ ТАБЛИЦЫ */
+.research td {
+    border: none;
+    padding: 15px 20px;
+    color: black; 
+    font-size: 20px;
+}
+
+/* ГОРИЗОНТАЛЬНЫЕ ЛИНИИ */
+.research tr {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.research tr:last-child {
+    border-bottom: none;
+}
+
+/* ПЕРВАЯ КОЛОНКА */
+.research td.head {
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0;
+    color: black;
+}
+
+/* ВТОРАЯ КОЛОНКА */
+.research td:nth-child(2) {
+    font-weight: 500;
+    color: black;
+}
+
+/* ТРЕТЬЯ КОЛОНКА */
+.research td:nth-child(3) {
+    color: black;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+                                            /* НЕОБЫЧНЫЕ ФАКТЫ */
+
+.interesting_facts {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.interesting_facts h2 {
+    font-size: 200px;
+    letter-spacing: -8%;
+    line-height: 72%;
+}
+
+.facts {
+    margin: 100px 90px 30px 90px;
+    padding-bottom: 50px;
+}
+
+.facts .num {
+    font-size: 25px;
+    font-weight: 200;
+}
+.facts .head {
+    letter-spacing: 1%;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.facts .info {
+    letter-spacing: 1%;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: justify;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* ОПИСАНИЕ ФУТЕРА */
+
+/* ОПИСАНИЕ ФУТЕРА */
+footer {
+    background: white;
+    color: black;
+    display: flex;                    /* Делаем футер flex-контейнером */
+    justify-content: space-between;    /* Распределяем элементы: левый, центр, правый */
+    align-items: center;               /* Выравнивание по вертикали */
+    padding: 20px 50px 30px 50px;                /* Внутренние отступы */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer img {
+    width: 120px;
+    height: auto;
+}
+
+/* Левое меню */
+footer .concepts_menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;                         /* Расстояние между пунктами */
+}
+
+footer .concepts_menu ul li a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+footer .concepts_menu ul li a:hover {
+    background: black;
+    color: white;
+}
+
+/* Правое меню */
+footer .main_menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;                         /* Расстояние между пунктами */
+}
+
+footer .main_menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    transition: 0.5s ease;
+}
+
+footer .main_menu ul li a:hover {
+    color: #666;
+    font-weight: 500;
+}
+
+/* Логотип по центру */
+footer .footer_logo {
+    margin: 0 20px;                     /* Отступы от меню */
+}
+
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ДЛЯ IPHONE 15 ===== */
+/* СТРАНИЦА ЮПИТЕРА */
+
+/* Предотвращаем горизонтальный скролл */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ДЛЯ IPHONE 15 ===== */
+/* СТРАНИЦА ЮПИТЕРА */
+
+/* Предотвращаем горизонтальный скролл */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Основные стили для мобильных */
+@media screen and (max-width: 430px) {
+    
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* ===== ШАПКА - ИСПРАВЛЕНО ===== */
+    header {
+        padding: 15px 10px;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-wrap: nowrap; /* Запрещаем перенос */
+        justify-content: center;
+        align-items: center;
+        gap: 8px; /* Уменьшенные отступы */
+        padding: 0 5px;
+    }
+    
+    header nav ul li.image {
+        margin-right: 5px; /* Уменьшенный отступ */
+        max-width: 80px;
+    }
+    
+    header img {
+        width: 70px; /* Уменьшенный логотип */
+    }
+    
+    header nav ul li {
+        margin: 0 2px;
+    }
+    
+    header nav ul li a {
+        font-size: 9px; /* Уменьшенный шрифт */
+        white-space: nowrap;
+        padding: 0 3px;
+    }
+    
+    /* ===== HERO-БЛОК ===== */
+    main .hero p {
+        font-size: 18px; /* Уменьшил для предотвращения скролла */
+        width: 95%;
+        text-align: justify;
+        margin: 20px 10px 0;
+        line-height: 1.2;
+    }
+    
+    main .hero h1 {
+        font-size: 95px; /* Уменьшил */
+        margin: 15px 0 -30px -20px;
+    }
+    
+    /* ===== О ЮПИТЕРЕ (SUMMARY) ===== */
+    .summary {
+        padding: 15px 10px;
+    }
+    
+    .summary .Jupiter {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    .summary p {
+        font-size: 16px; /* Уменьшил */
+        width: 100%;
+        margin: 15px 0;
+        line-height: 1.3;
+        text-align: justify;
+    }
+    
+    .summary_card {
+        margin: 20px auto;
+        width: fit-content;
+    }
+    
+    .card {
+        max-width: 200px; /* Уменьшил */
+    }
+    
+    /* ===== НАВИГАЦИЯ ФИЗ/ХИМ/КВАНТ ===== */
+    .concepts nav ul {
+        float: none;
+        display: flex;
+        justify-content: right;
+        margin: 15px 10px;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: -30px;
+        padding-top: 80px;
+    }
+    
+    .concepts nav ul li {
+        margin: 0;
+        padding: 6px 12px; /* Уменьшил */
+        font-size: 11px; /* Уменьшил */
+    }
+    
+    /* ===== ОБЩИЕ СТИЛИ ДЛЯ БЛОКОВ ===== */
+    .core,
+    .mantle,
+    .shell {
+        width: 100% !important;
+        padding: 15px 10px;
+        margin: 0;
+    }
+    
+    .core h2,
+    .mantle h2,
+    .shell h2,
+    .atmosphere h2,
+    .magnetosphere h2,
+    .ring_system h2 {
+        font-size: 42px !important; /* Уменьшил */
+        width: 100%;
+        margin-bottom: 12px;
+        line-height: 88%;
+    }
+    
+    .core .info,
+    .mantle .info,
+    .shell .info {
+        font-size: 14px; /* Уменьшил */
+        font-weight: 300;
+        text-align: justify;
+        line-height: 1.3;
+        width: 100%;
+    }
+    
+    /* ===== ТАБЛИЦЫ - ЕДИНЫЙ РАЗМЕР ШРИФТА ===== */
+    .core table,
+    .mantle table,
+    .shell table,
+    .atmosphere table,
+    .magnetosphere table,
+    .ring_system table,
+    .chemical_composition table,
+    .chemical_structure table,
+    .with_stars table,
+    .research table,
+    .info table,
+    .quantum_transitions table {
+        width: 100% !important;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        font-size: 12px; /* Единый размер */
+    }
+    
+    .core td,
+    .mantle td,
+    .shell td,
+    .atmosphere td,
+    .magnetosphere td,
+    .ring_system td,
+    .chemical_composition td,
+    .chemical_structure td,
+    .with_stars td,
+    .research td,
+    .info td,
+    .quantum_transitions td {
+        padding: 8px 5px 8px 30px;
+        font-size: 15px !important; /* Единый размер */
+        white-space: normal;
+        line-height: 1.3;
+    }
+    
+    .core th,
+    .mantle th,
+    .shell th,
+    .atmosphere th,
+    .magnetosphere th,
+    .ring_system th,
+    .chemical_composition th,
+    .chemical_structure th,
+    .with_stars th,
+    .research th,
+    .info th,
+    .quantum_transitions th {
+        font-size: 15px !important; /* Единый размер */
+        padding: 8px 5px 8px 30px;
+    }
+    
+    .core td.head,
+    .mantle td.head,
+    .shell td.head,
+    .atmosphere td.head,
+    .magnetosphere td.head,
+    .ring_system td.head,
+    .chemical_composition td.head,
+    .chemical_structure td.head,
+    .with_stars td.head,
+    .research td.head,
+    .info td.head,
+    .quantum_transitions td.head {
+        white-space: normal;
+        min-width: 80px;
+        font-size: 12px !important;
+        font-weight: 700;
+    }
+    
+    /* ВТОРАЯ И ТРЕТЬЯ КОЛОНКИ */
+    .core td:nth-child(2),
+    .mantle td:nth-child(2),
+    .shell td:nth-child(2),
+    .atmosphere td:nth-child(2),
+    .magnetosphere td:nth-child(2),
+    .ring_system td:nth-child(2),
+    .chemical_composition td:nth-child(2),
+    .chemical_structure td:nth-child(2),
+    .with_stars td:nth-child(2),
+    .research td:nth-child(2),
+    .info td:nth-child(2),
+    .quantum_transitions td:nth-child(2) {
+        font-size: 12px !important;
+        font-weight: 400;
+        margin-left: 30px;
+    }
+    
+    .core td:nth-child(3),
+    .mantle td:nth-child(3),
+    .shell td:nth-child(3),
+    .atmosphere td:nth-child(3),
+    .magnetosphere td:nth-child(3),
+    .ring_system td:nth-child(3)
+     {
+        font-size: 12px !important;
+        color: white;
+        margin-left: 30px;
+    }
+
+    .chemical_composition td:nth-child(3),
+    .chemical_structure td:nth-child(3),
+    .with_stars td:nth-child(3),
+    .research td:nth-child(3),
+    .info td:nth-child(3),
+    .quantum_transitions td:nth-child(3) {
+        font-size: 12px !important;
+        color: black;
+        margin-left: 30px;
+    }
+    
+    /* ===== АТМОСФЕРА ===== */
+    .atmosphere {
+        padding: 15px 10px;
+    }
+    
+    .structure,
+    .dynamic,
+    .big_red_spot,
+    .reasons_of_red_color {
+        width: 100% !important;
+    }
+    
+    .structure h6.info,
+    .dynamic h6.info,
+    .big_red_spot h6,
+    .reasons_of_red_color h6 {
+        width: 100% !important;
+        max-width: 250px; /* Уменьшил */
+        height: auto;
+        min-height: 40px;
+        font-size: 14px !important; /* Уменьшил */
+        padding: 8px;
+        margin: 8px 0 15px;
+    }
+
+    .dynamic p {
+        text-align: justify;
+        width: 90%;
+    }
+    .dynamic .head {
+        font-weight: 600;
+    }
+    .dynamic .explanation_head {
+        font-weight: 600;
+    }
+
+    .big_red_spot p {
+        text-align: justify;
+        width: 95%;
+    }
+    .big_red_spot .head {
+        font-weight: 600;
+    }
+
+    .reasons_of_red_color ul li p.head {
+        font-size: 14px; /* Уменьшил */
+    }
+    
+    .reasons_of_red_color ul li p {
+        font-size: 12px; /* Уменьшил */
+        text-align: justify;
+    }
+    .reasons_of_red_color .P_S {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    /* ===== МАГНИТОСФЕРА ===== */
+    .magnetosphere,
+    .ring_system {
+        width: 100% !important;
+        padding: 15px 10px;
+    }
+    
+    .magnetosphere h6,
+    .ring_system h6 {
+        width: 100% !important;
+        max-width: 250px; /* Уменьшил */
+        font-size: 14px !important; /* Уменьшил */
+        height: auto;
+        min-height: 40px;
+    }
+    
+    .polar_mergers,
+    .history,
+    .functions {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+    }
+
+    .polar_mergers h6,
+    .history h6,
+    .functions h6 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .polar_mergers p,
+    .history p,
+    .functions p {
+        width: 100% !important;
+        font-size: 12px !important; /* Уменьшил */
+        line-height: 1.4;
+    }
+    
+    /* ===== ХИМИЯ - СКРЫВАЕМ ФОТО ===== */
+
+    .chemistry nav {
+        padding-top: 30px;
+    }
+    .chemical_composition img,
+    .chemical_structure img {
+        display: none !important; /* Скрываем на мобильных */
+    }
+    
+    .chemical_composition h2,
+    .chemical_structure h2 {
+        font-size: 26px !important; /* Уменьшил */
+        padding-top: 30px;
+        margin: 0 10px 20px;
+        text-align: left;
+    }
+
+    .chemistry table {
+        margin-left: 10px;
+    }
+    
+    /* ===== КВАНТОВАЯ ФИЗИКА ===== */
+    .quantum_physics nav {
+        padding-bottom: 20px;
+    }
+
+    .quantum_physics table {
+        margin-left: 10px;
+    }
+    
+    .metallic_hydrogen .header {
+        margin: 0 10px 20px;
+        padding: 15px;
+    }
+    
+    .metallic_hydrogen h2 {
+        width: 100%;
+        font-size: 20px; /* Уменьшил */
+        display: block;
+    }
+    
+    .metallic_hydrogen p {
+        width: 100%;
+        margin: 10px 0 0;
+        font-size: 12px; /* Уменьшил */
+    }
+    
+    .dinamo_effect {
+        padding: 15px 10px;
+    }
+    
+    .dinamo_effect .header h2 {
+        font-size: 22px; /* Уменьшил */
+    }
+    
+    .result p {
+        width: 100%;
+        font-size: 12px; /* Уменьшил */
+        font-weight: 300;
+    }
+    
+    .quantum_transitions {
+        padding: 15px 10px;
+    }
+    
+    .quantum_transitions h2 {
+        float: none;
+        width: 95%;
+        text-align: left;
+        font-size: 26px; /* Уменьшил */
+        margin-bottom: 15px;
+    }
+    
+    .quantum_transitions .table {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .quantum_transitions .table img {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .decameter_radiation {
+        margin: 15px 10px;
+    }
+    
+    .decameter_radiation h2 {
+        width: 100%;
+        font-size: 26px; /* Уменьшил */
+    }
+
+    .decameter_radiation h6 {
+        padding: 5px 10px;
+        width: 90%;
+    }
+    
+    .decameter_radiation p {
+        font-size: 12px; /* Уменьшил */
+    }
+    
+    .quantum_nature {
+        margin: 15px 10px;
+    }
+    
+    .quantum_nature h2 {
+        width: 100%;
+        font-size: 22px; /* Уменьшил */
+    }
+    
+    .quantum_nature .info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .quantum_nature .heat_generation,
+    .quantum_nature .characteristic {
+        max-width: 100%;
+    }
+    
+    /* ===== ЭВОЛЮЦИЯ И СРАВНЕНИЕ ===== */
+    .evolution,
+    .with_stars,
+    .research {
+        padding: 20px 10px;
+    }
+    
+    .with_stars p {
+        width: 100%;
+        padding: 12px;
+        font-size: 12px; /* Уменьшил */
+    }
+    
+    .accretion img {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    /* ===== НЕОБЫЧНЫЕ ФАКТЫ ===== */
+    .interesting_facts h2 {
+        font-size: 59px; /* Уменьшил */
+        text-align: left;
+    }
+    
+    .facts {
+        margin: 20px 10px;
+    }
+    
+    .facts .num,
+    .facts .head,
+    .facts .info {
+        font-size: 14px !important; /* Уменьшил */
+        margin-left: 0;
+    }
+
+    .facts .num {
+        font-weight: 400;
+    }
+    
+    .facts .head {
+        margin-top: 5px;
+        font-weight: 600;
+    }
+    
+    .facts .info {
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    /* ===== ФУТЕР ===== */
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+    
+    footer .concepts_menu ul,
+    footer .main_menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px; /* Уменьшил */
+    }
+    
+    footer .concepts_menu ul li a {
+        padding: 6px 12px; /* Уменьшил */
+        font-size: 10px; /* Уменьшил */
+    }
+    
+    footer .main_menu ul li a {
+        font-size: 10px; /* Уменьшил */
+    }
+    
+    footer img {
+        width: 60px; /* Уменьшил */
+        margin: 5px 0;
+    }
+    
+    footer .footer_logo {
+        margin: 0;
+    }
+}
+
+/* ===== ФУНКЦИОНАЛ ДЛЯ ОТКРЫТИЯ ФОТО В ПОЛНЫЙ ЭКРАН ===== */
+/* Добавьте этот JavaScript в ваш HTML перед закрывающим тегом </body> */
+
+/*
+<script>
+    // Функция для открытия изображений в полный экран
+    document.addEventListener('DOMContentLoaded', function() {
+        // Выбираем все изображения, которые должны открываться в полный экран
+        const images = document.querySelectorAll('.summary_card img, .scheme img, .accretion img');
+        
+        images.forEach(function(img) {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function() {
+                // Создаем оверлей
+                const overlay = document.createElement('div');
+                overlay.style.position = 'fixed';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+                overlay.style.zIndex = '9999';
+                overlay.style.display = 'flex';
+                overlay.style.justifyContent = 'center';
+                overlay.style.alignItems = 'center';
+                overlay.style.cursor = 'pointer';
+                
+                // Создаем увеличенное изображение
+                const largeImg = document.createElement('img');
+                largeImg.src = this.src;
+                largeImg.style.maxWidth = '90%';
+                largeImg.style.maxHeight = '90%';
+                largeImg.style.objectFit = 'contain';
+                largeImg.style.border = 'none';
+                
+                // Добавляем изображение в оверлей
+                overlay.appendChild(largeImg);
+                
+                // Добавляем оверлей в body
+                document.body.appendChild(overlay);
+                
+                // Закрытие по клику
+                overlay.addEventListener('click', function() {
+                    document.body.removeChild(overlay);
+                });
+                
+                // Закрытие по ESC
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && document.body.contains(overlay)) {
+                        document.body.removeChild(overlay);
+                    }
+                });
+            });
+        });
+    });
+</script>
+*/
+
+/* ===== ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ТЕЛЕФОНОВ (ДО 375px) ===== */
+@media screen and (max-width: 375px) {
+    
+    header nav ul {
+        gap: 5px;
+    }
+    
+    header nav ul li a {
+        font-size: 8px; /* Ещё меньше */
+    }
+    
+    main .hero h1 {
+        font-size: 42px;
+    }
+    
+    .core h2,
+    .mantle h2,
+    .shell h2,
+    .atmosphere h2,
+    .magnetosphere h2,
+    .ring_system h2 {
+        font-size: 28px !important;
+    }
+    
+    .interesting_facts h2 {
+        font-size: 32px;
+    }
+    
+    footer .concepts_menu ul,
+    footer .main_menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+/* ===== ЛАНДШАФТНАЯ ОРИЕНТАЦИЯ ===== */
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    
+    header nav ul {
+        gap: 10px;
+    }
+    
+    .summary .Jupiter {
+        width: 30%;
+        float: right;
+        margin: 10px 0 10px 15px;
+    }
+    
+    .summary p {
+        width: 65%;
+        font-size: 14px;
+    }
+    
+    .core table,
+    .mantle table,
+    .shell table {
+        width: 100%;
+        overflow-x: visible;
+        white-space: normal;
+    }
+    
+    .quantum_transitions .table {
+        flex-direction: row;
+    }
+    
+    .quantum_nature .info {
+        flex-direction: row;
+    }
+    
+    footer {
+        flex-direction: row;
+    }
+}
+
+/* ===== SAFE AREA ДЛЯ IPHONE 15 ===== */
+@supports (padding: max(0px)) {
+    header {
+        padding-top: max(15px, env(safe-area-inset-top));
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+    }
+    
+    .hero {
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+    }
+    
+    .core,
+    .mantle,
+    .shell,
+    .atmosphere,
+    .magnetosphere,
+    .ring_system {
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+    }
+    
+    footer {
+        padding-bottom: max(15px, env(safe-area-inset-bottom));
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+    }
+}
