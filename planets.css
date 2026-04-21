@@ -73,7 +73,7 @@ body {
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-    background-image: url('/background4.svg');
+    background-image: url('background4.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
