@@ -92,7 +92,7 @@ body {
     justify-content: center;
     text-align: center;
     min-height: 90vh;
-    background: url('/background1.png') no-repeat center center / 40% auto black;
+    background: url('background1.png') no-repeat center center / 40% auto black;
 }
 
 .hero-content {
@@ -165,7 +165,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    background: url('/background2.svg') no-repeat center center / cover;
+    background: url('background2.svg') no-repeat center center / cover;
     border-radius: var(--border-radius);
 }
 
